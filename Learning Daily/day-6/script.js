@@ -81,7 +81,6 @@ function primefractorization(num) {
         if (num % i == 0) {
             newArr.push(i)
             num /= i;
-            i--
         }
 
     }
