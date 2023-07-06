@@ -55,7 +55,6 @@ function kite() {
             str += " "
 
         }
-
         for (k = 1; k < i; k++) {
 
             str += "* "
@@ -76,8 +75,8 @@ function kite() {
         for (k = 1; k < i; k++) {
 
             str += " *"
-
-        }
+//
+      }
 
         str += "\n"
     }
