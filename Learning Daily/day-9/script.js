@@ -30,59 +30,59 @@
 // // return duplicate integer of an array
 
 
-// function duplicateInt(arr) {
+function duplicateInt(arr) {
 
-//     let newArr = [];
-
-//     for (i = 0; i < arr.length; i++) {
-
-//         for (j = 0; j < i; j++) {
-
-//             if (arr[i] == arr[j]) {
-
-//                 newArr.push(arr[i])
-//             }
-//         }
-//     }
-//     return newArr
-
-// }
-
-// console.log(duplicateInt([1, 2, 3, 4, 3, 5, 6]));
-// console.log(duplicateInt([81, 72, 43, 72, 81, 99, 99, 100, 12, 54]));
-
-// array missing
-
-function missingNum(arr) {
-
-    let min = Math.min(...arr);
-    let max = Math.max(...arr);
     let newArr = [];
-    // let flag = false;
-    for (i = min; i <= max; i++) {
 
-        // for (j = 0; j < arr.length; j++) {
+    for (i = 0; i < arr.length; i++) {
 
-        //     if (arr[j] === i) {
-        //         flag = true;
-        //         break;
-        //     }
+        for (j = 0; j < i; j++) {
 
-        // }
+            if (arr[i] == arr[j]) {
 
-        // if (!flag) {
-        //     newArr.push(i);
-
-        // }
-        // flag = false;
-
-        if(!arr.includes(i)){
-
-            newArr.push(i)
+                newArr.push(arr[i])
+            }
         }
     }
     return newArr
 
 }
 
-console.log(missingNum([3, 2, 4, 7, 9]));
+console.log(duplicateInt([1, 2, 3, 4, 3, 5, 6]));
+console.log(duplicateInt([81, 72, 43, 72, 81, 99, 99, 100, 12, 54]));
+
+// array missing
+
+// function missingNum(arr) {
+
+//     let min = Math.min(...arr);
+//     let max = Math.max(...arr);
+//     let newArr = [];
+//     // let flag = false;
+//     for (i = min; i <= max; i++) {
+
+//         // for (j = 0; j < arr.length; j++) {
+
+//         //     if (arr[j] === i) {
+//         //         flag = true;
+//         //         break;
+//         //     }
+
+//         // }
+
+//         // if (!flag) {
+//         //     newArr.push(i);
+
+//         // }
+//         // flag = false;
+
+//         if(!arr.includes(i)){
+
+//             newArr.push(i)
+//         }
+//     }
+//     return newArr
+
+// }
+
+// console.log(missingNum([3, 2, 4, 7, 9]));

@@ -54,39 +54,39 @@
 
 
 
-function repeated(arr) {
+// function repeated(arr) {
 
-    let newArr = [];
+//     let newArr = [];
 
 
-    for (i = 1; i < arr.length; i++) {
+//     for (i = 1; i < arr.length; i++) {
 
-        for (j = 0; j < i; j++) {
+//         for (j = 0; j < i; j++) {
 
-            if (arr[i] == arr[j]) {
+//             if (arr[i] == arr[j]) {
 
-                let flag = true;
+//                 let flag = true;
 
-                if (newArr.length == 0) {
-                    newArr.push(arr[i])
-                }
+//                 if (newArr.length == 0) {
+//                     newArr.push(arr[i])
+//                 }
 
-                for (k = 0; k < newArr.length; k++) {
+//                 for (k = 0; k < newArr.length; k++) {
 
-                    if (newArr[k] !== arr[j]) {
-                        flag = false;
-                    }
-                }
-                if (!flag) {
-                    newArr.push(arr[i])
-                }
-            }
-        }
-    }
+//                     if (newArr[k] !== arr[j]) {
+//                         flag = false;
+//                     }
+//                 }
+//                 if (!flag) {
+//                     newArr.push(arr[i])
+//                 }
+//             }
+//         }
+//     }
 
-    return newArr
-}
-console.log(repeated([1, 2, 3, 4, 3, 4, 2, 3, 5]));
+//     return newArr
+// }
+// console.log(repeated([1, 2, 3, 4, 3, 4, 2, 3, 5]));
 
 
 // function union(arr1, arr2) {
@@ -101,17 +101,43 @@ console.log(repeated([1, 2, 3, 4, 3, 4, 2, 3, 5]));
 //         }
 //     }
 
-//         for (i = 0; i < arr2.length; i++) {
+//     for (i = 0; i < arr2.length; i++) {
 
-//             if (!newArr.includes(arr2[i])) {
+//         if (!newArr.includes(arr2[i])) {
 
-//                 newArr.push(arr2[i])
-//             }
+//             newArr.push(arr2[i])
+//         }
 
 //     }
 //     return newArr;
 // }
 
-// console.log(union([1, 2, 3, 4], [3, 4, 5]))
+// console.log(union([1, 2, 3, 4], [3, 4, 5]));
 
+
+
+
+
+function union(arr) {
+
+    let store =[]
+    for (let i = 0; i < arr.length; i++) {
+        for (let j = 0; j < arr.length; j++) {
+            if (arr[i] !== arr[j] && toFindElement(arr[i])) {
+                store.push(arr[i]);
+                break;
+            }
+        }
+    }
+    function toFindElement(element) {
+        for (let index = 0; index < store.length; index++) {
+            if (element === store[index]) {
+                return false;
+            }
+        }
+        return true;
+    }
+    return store;
+}
+console.log(union([2,3,1,4,5,6,2,0]));
 
