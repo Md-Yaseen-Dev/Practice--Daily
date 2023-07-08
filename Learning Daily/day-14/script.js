@@ -118,7 +118,6 @@
 
 
 
-function union(arr) {
 
     let store =[]
     for (let i = 0; i < arr.length; i++) {
@@ -137,7 +136,6 @@ function union(arr) {
         }
         return true;
     }
-    return store;
-}
-console.log(union([2,3,1,4,5,6,2,0]));
+
+console.log(store);
 
