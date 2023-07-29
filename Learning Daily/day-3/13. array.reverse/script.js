@@ -11,6 +11,8 @@ function reverse(arr) {
 
         newArr.push(arr.pop());
 
+        // newArr.push(arr[arr.length - i-1])
+
     }
 
 
@@ -24,7 +26,7 @@ function reverse(arr) {
     return newArr;
 }
 
-console.log(reverse([1, 2,3, 4, 5]));
+console.log(reverse([1, 2, 3, 4, 5]));
 
 
 // function reverse1(arr) {
