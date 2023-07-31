@@ -4,7 +4,7 @@
 
 //     let lcm = num1;
 
-//     while (lcm % num1 != 0 || lcm % num2 != 0) {
+//     if (lcm % num1 != 0 || lcm % num2 != 0) {
 
 //         lcm++
 //     }
@@ -21,7 +21,7 @@
 
 //     let hcf = num1;
 
-//     while (num1 % hcf != 0 || num2 % hcf != 0) {
+//     if (num1 % hcf != 0 || num2 % hcf != 0) {
 
 //         hcf--
 //     }
@@ -33,29 +33,29 @@
 // -----------------------------------------factorial--------------------------------------------------
 
 
-function factorial(num) {
+// function factorial(num) {
 
-    let factorial = 1;
+//     let factorial = 1;
 
-    while (num > 1) {
+//     if (num > 1) {
 
-        factorial = factorial * num;
-        num--
-    }
-    return factorial;
-}
+//         factorial = factorial * num;
+//         num--
+//     }
+//     return factorial;
+// }
 
 // console.log(factorial(6));
 
 // ------------------------------------
-var base_convert = function (number, initial_base, change_base) {
-    // if ((initial_base && change_base) < 2 || (initial_base && change_base) > 36)
-    //     return 'Base between 2 and 36';
+// var base_convert = function (number, initial_base, change_base) {
+//     // if ((initial_base && change_base) < 2 || (initial_base && change_base) > 36)
+//     //     return 'Base between 2 and 36';
 
-    return parseInt(number + " ", initial_base);
-}
+//     return parseInt(number + " ", initial_base);
+// }
 
-console.log(base_convert(1000, 2, 8));
+// console.log(base_convert(1000, 2, 8));
 
 
 
@@ -88,28 +88,28 @@ console.log(base_convert(1000, 2, 8));
 //   ------------------prime number 1-100---------------------
 
 
-function primeNumber() {
+// function primeNumber() {
 
-    let primenumbers = [];
+//     let primenumbers = [];
 
-    for (let i = 1; i <= 100; i++) {
+//     for (let i = 1; i <= 100; i++) {
 
-        for (j = 2; j < i; j++) {
+//         for (j = 2; j < i; j++) {
 
-            if (i % j == 0) {
-                break;
+//             if (i % j == 0) {
+//                 break;
 
-            }
+//             }
 
-        }
-        if (i == j) {
-            primenumbers.push(i)
+//         }
+//         if (i == j) {
+//             primenumbers.push(i)
 
-        }
+//         }
 
-    }
-    return primenumbers;
-}
+//     }
+//     return primenumbers;
+// }
 
 // console.log(primeNumber())
 
@@ -118,90 +118,161 @@ function primeNumber() {
 
 
 
-function generatePrimes(limit) {
-    const primes = [];
+// function generatePrimes(limit) {
+//     const primes = [];
 
-    function isPrime(num) {
-        if (num <= 1) return false;
+//     function isPrime(num) {
+//         if (num <= 1) return false;
 
-        //   console.log(num)
-        for (let i = 2; i < num; i++) {
-            if (num % i === 0) return false;
+//         //   console.log(num)
+//         for (let i = 2; i < num; i++) {
+//             if (num % i === 0) return false;
+//         }
+
+//         return true;
+//     }
+
+//     for (let i = 2; i <= limit; i++) {
+//         if (isPrime(i)) primes.push(i);
+//     }
+
+//     return primes;
+// }
+
+// // Example usage
+// const limit = 50;
+// const primes = generatePrimes(limit);
+// console.log("Prime numbers up to", limit, "are:", primes);
+
+
+
+// //   --------------------------using flag--------------------------
+
+
+
+// function primeNumbers200() {
+
+//     let primenumbers = [];
+
+//     let flag = true;
+
+//     for (let i = 2; i <= 200; i++) {
+
+//         for (j = 2; j < i; j++) {
+
+//             if (i % j == 0) {
+
+//                 flag = false;
+//                 break;
+//             }
+
+//             flag = true;
+
+//         }
+//         if (flag) {
+//             primenumbers.push(i);
+//         }
+//     }
+//     return primenumbers;
+// }
+
+// console.log(primeNumbers200());
+
+
+// // ------------------------prime factors-------------------
+
+
+// function primefactors(num) {
+
+//     let primefactors = [];
+
+//     for (i = 2; i <= num; i++) {
+
+//         if (num % i == 0) {
+
+//             primefactors.push(i)
+
+//             num /= i;
+
+//             i--;
+//         }
+//     }
+//     return primefactors
+
+// }
+// console.log(primefactors(250))
+
+// --------bubble sort--------------------
+
+
+// function sort() {
+
+//     let arr = [5, 3, 4, 2, 1];
+
+//     for (let i = 1; i < arr.length; i++) {
+
+//         for (j = 0; j < i; j++) {
+
+//             if (arr[i] < arr[j]) {
+
+//                 let temp = arr[i];
+
+//                 arr[i] = arr[j];
+
+//                 arr[j] = temp;
+//             }
+
+//         }
+//     }
+
+//     return arr
+// }
+
+// console.log(sort());
+
+
+// ------------------------last elements--------------
+
+function lastelements(arr, lastelements) {
+
+
+    let newarr = []
+    let count = 0;
+
+    for (let i = arr.length - 1; i >= 0; i--) {
+
+
+        if (count < lastelements) {
+
+            newarr.push(arr[i])
+            count++
         }
-
-        return true;
     }
 
-    for (let i = 2; i <= limit; i++) {
-        if (isPrime(i)) primes.push(i);
-    }
-
-    return primes;
+    let elem = arr.length - newarr.length;
+    return (newarr.length != 0) ? arr.slice(elem): arr.slice(-1)
 }
 
-// Example usage
-const limit = 50;
-const primes = generatePrimes(limit);
-console.log("Prime numbers up to", limit, "are:", primes);
+console.log(lastelements([2, 3, 4, 1, 2]));
+
+// arr[4] // arr.length = 5; latelement = 1
 
 
-
-//   --------------------------using flag--------------------------
-
+// ----------------------another method------------------
 
 
-function primeNumbers200() {
+function lastelem(arr, last) {
 
-    let primenumbers = [];
+    let newarr = [];
 
-    let flag = true;
+    let elem = arr.length - last;
 
-    for (let i = 2; i <= 200; i++) {
+    for (let i = elem; i < arr.length; i++) {
 
-        for (j = 2; j < i; j++) {
 
-            if (i % j == 0) {
-
-                flag = false;
-                break;
-            }
-
-            flag = true;
-
-        }
-        if (flag) {
-            primenumbers.push(i);
-        }
+        newarr.push(arr[i])
     }
-    return primenumbers;
+    return newarr;
 }
 
-console.log(primeNumbers200());
-
-
-// ------------------------prime factors-------------------
-
-
-function primefactors(num) {
-
-    let primefactors = [];
-    let flag = true;
-
-    for (let i = 1; i < num; i++) {
-
-
-        for (j = 2; j < i; j++){
-
-
-            if (num % i == 0  && i % j != 0)  {
-           
-                primefactors.push(i)
-
-            }
-        }
-            
-    }
-return primefactors
-
-}
-console.log(primefactors(20))
+console.log(lastelem([2, 3, 4, 1, 2], 3));
