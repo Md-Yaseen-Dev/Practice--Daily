@@ -87,7 +87,7 @@ function primefractorization(num) {
     return newArr;
 }
 
-console.log(primefractorization(250));
+console.log(primefractorization(50));
 
 // min
 
