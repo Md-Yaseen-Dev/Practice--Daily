@@ -1,4 +1,3 @@
-
 // function isprime(num) {
 
 //     for (i = 2; i < num / 2; i++) {
@@ -13,29 +12,28 @@
 
 // console.log(isprime(31));
 
-
 // //------------------- print from 1- 100---------------------------
 
-// function prime100() {
+function prime100() {
 
-//     let newArr = [];
-//     for (i = 1; i <= 100; i++) {
+    let newArr = [];
+    for (i = 1; i <= 100; i++) {
 
-//         for (j = 2; j < i; j++) {
+        for (j = 2; j < i; j++) {
 
-//             if (i % j == 0) {
+            if (i % j == 0) {
 
-//                 break;
-//             }
-//         }
-//         if (i == j) {
-//             newArr.push(i)
-//         }
-//     }
-//     return newArr
-// }
-// console.log(prime100());
-
+                break;
+            }
+        }
+        console.log(j)
+        if (i == j) {
+            newArr.push(i)
+        }
+    }
+    return newArr
+}
+console.log(prime100());
 
 // // ----minimum----------------
 
@@ -74,7 +72,6 @@
 
 // // // ---- sum---------------------------
 
-
 // function sum(arr) {
 
 //     let add = 0;
@@ -100,27 +97,20 @@
 // }
 // console.log(multiply([1, 10, 3, 1, 2]))
 
-// array sort 
+// array sort
 
 // function sort(arr) {
 //     for (i = 1; i < arr.length; i++) {
-
-
 //         for (j = 0; j < i; j++) {
-
 //             if (arr[i] < arr[j]) {
 //                 var temp = arr[i];
 //                 arr[i] = arr[j];
 //                 arr[j] = temp;
-
-
 //             }
 //         }
-
 //     }
 
 //     return arr;
 // }
 
-// console.log(sort([3, 1, 2, 5, 4]))
-
+// console.log(sort([3, 1, 2, 5, 4]));
