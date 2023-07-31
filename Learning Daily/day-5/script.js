@@ -3,7 +3,7 @@
 
 function hcf(num1, num2) {
     let hcf = num1;
-    while (num1 % hcf != 0 || num2 % hcf != 0) {
+    while (num1 % hcf != 0 || num2 % hcf != 0) {  
 
         hcf--
 
@@ -12,76 +12,75 @@ function hcf(num1, num2) {
 }
 
 
-console.log(hcf(24, 18));
+console.log(hcf(24, 6));
 
 
 // --------------lcm -------------------------
 
 
-function Lcm(num1, num2) {
+// function Lcm(num1, num2) {
 
-    let lcm = num1;
+//     let lcm = num1;
 
-    while (lcm % num1 != 0 || lcm % num2 != 0) {
+//     while (lcm % num1 != 0 || lcm % num2 != 0) {
 
-        lcm++
+//         lcm++
 
-    }
+//     }
 
-    return lcm
-}
+//     return lcm
+// }
 
-console.log(Lcm(17, 5))
-
-
-// -----------------factorial----------------------------
-
-function factorial(num) {
-
-    let str = 1;
-    for (i = num; i > 0; i--) {
+// console.log(Lcm(17, 5))
 
 
-        str = i * str
-    }
+// // -----------------factorial----------------------------
 
-    return str;
-}
+// function factorial(num) {
 
-console.log(factorial(6))
-
-
-// ---using while loop
+//     let str = 1;
+//     for (i = num; i > 0; i--) {
 
 
-function facorial1(num1) {
+//         str = i * str
+//     }
 
-    let str = 1;
+//     return str;
+// }
 
-    while (num1 > 0) {
-
-        str = num1 * str;
-
-        num1--
-    }
-    return str;
-}
-
-console.log(facorial1(3));
-
-//---fibonacci key
-
-function fibonacci(n) {
-
-    let newArr = [1, 1]
+// console.log(factorial(6))
 
 
-    for (let i = 0; i < n; i++) {
+// // ---using while loop
 
-        newArr.push(newArr[i] + newArr[i + 1])
-    }
-    return newArr
-}
 
-console.log(fibonacci(10));
+// function facorial1(num1) {
+
+//     let str = 1;
+
+//     while (num1 > 0) {
+
+//         str = num1 * str;
+
+//         num1--
+//     }
+//     return str;
+// }
+
+// console.log(facorial1(3));
+
+// //---fibonacci key
+
+// function fibonacci(n) {
+
+//     let newArr = [1, 1]
+
+//     for (let i = 0; i < n; i++) {
+
+//         newArr.push(newArr[i] + newArr[i + 1])
+//     }
+//     return newArr
+// }
+
+// console.log(fibonacci(10));
 
