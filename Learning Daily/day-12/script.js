@@ -46,21 +46,21 @@
 
 
 
-// function minSwaps(str1, str2) {
+function minSwaps(str1, str2) {
 
-//     let count = 0;
-//     for (i = 0; i < str1.length/2; i++) {
+    let count = 0;
+    for (i = 0; i < str1.length/2; i++) {
 
-//         if (str1[i] !== str2[i]) {
-//             count++
-//         }
-//     }
-//     return count
-// }
+        if (str1[i] !== str2[i]) {
+            count++
+        }
+    }
+    return count
+}
 
-// console.log(minSwaps("1100", "1001"));
-// console.log(minSwaps("110011", "010111") );
-// console.log(minSwaps("10011001", "01100110") );
+console.log(minSwaps("1100", "1001"));
+console.log(minSwaps("110011", "010111") );
+console.log(minSwaps("10011001", "01100110") );
 
 
 // 3.

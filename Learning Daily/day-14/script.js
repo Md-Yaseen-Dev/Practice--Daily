@@ -60,12 +60,12 @@
 
 
 //     for (i = 1; i < arr.length; i++) {
+//         let flag = true;
 
 //         for (j = 0; j < i; j++) {
 
 //             if (arr[i] == arr[j]) {
 
-//                 let flag = true;
 
 //                 if (newArr.length == 0) {
 //                     newArr.push(arr[i])
@@ -119,23 +119,23 @@
 
 
 
-    let store =[]
-    for (let i = 0; i < arr.length; i++) {
-        for (let j = 0; j < arr.length; j++) {
-            if (arr[i] !== arr[j] && toFindElement(arr[i])) {
-                store.push(arr[i]);
-                break;
-            }
-        }
-    }
-    function toFindElement(element) {
-        for (let index = 0; index < store.length; index++) {
-            if (element === store[index]) {
-                return false;
-            }
-        }
-        return true;
-    }
+//     let store =[]
+//     for (let i = 0; i < arr.length; i++) {
+//         for (let j = 0; j < arr.length; j++) {
+//             if (arr[i] !== arr[j] && toFindElement(arr[i])) {
+//                 store.push(arr[i]);
+//                 break;
+//             }
+//         }
+//     }
+//     function toFindElement(element) {
+//         for (let index = 0; index < store.length; index++) {
+//             if (element === store[index]) {
+//                 return false;
+//             }
+//         }
+//         return true;
+//     }
 
-console.log(store);
+// console.log(store);
 
