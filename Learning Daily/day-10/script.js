@@ -20,28 +20,28 @@
 
 
 
-// function orderedMatrix(a, b) {
+function orderedMatrix(a, b) {
 
-//     let matrix = [];
-//     let count = 1;
+    let matrix = [];
+    let count = 1;
 
-//     for (i = 1; i <= a; i++) {
+    for (i = 1; i <= a; i++) {
 
-//         const row = []
+        const row = []
 
-//         for (j = 1; j<=b; j++){
+        for (j = 1; j<=b; j++){
 
-//             row.push(count);
-//             count++
-//         }
-//         matrix.push(row)
-//     }
+            row.push(count);
+            count++
+        }
+        matrix.push(row)
+    }
 
 
-// return matrix
+return matrix
 
-// }
-// console.log(orderedMatrix(7, 5))
+}
+console.log(orderedMatrix(8, 5))
 
 
 
@@ -69,6 +69,8 @@
 function isSmooth(sentence) {
 
     let arr = sentence.split(" ");
+
+    console.log(arr)
 
     for (i = 0; i < arr.length - 1; i++) {
 

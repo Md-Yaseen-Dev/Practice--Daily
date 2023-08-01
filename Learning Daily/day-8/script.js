@@ -32,19 +32,19 @@
 
 // 1-100 return every number 3 and 5  not multiples
 
-// function number() {
+function number() {
 
-//     let newArr = [];
-//     for (i = 1; i <= 100; i++) {
+    let newArr = [];
+    for (i = 1; i <= 100; i++) {
 
-//         if (i % 3 != 0 && i % 5 != 0) {
-//             newArr.push(i)
-//         }
+        if (i % 3 != 0 && i % 5 != 0) {
+            newArr.push(i)
+        }
 
-//     }
-//     return newArr;
-// }
-// console.log(number());
+    }
+    return newArr;
+}
+console.log(number());
 
 
 // 1-100 prime numbers

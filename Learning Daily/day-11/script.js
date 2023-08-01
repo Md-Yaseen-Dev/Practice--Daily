@@ -1,26 +1,30 @@
 //  find the word
 
-// function findtheword(str, word) {
+function findtheword(str, word) {
 
-// let count = 0;
-//     for (i = 0; i < str.length; i++) {
+    let count = 0;
+    for (i = 0; i < str.length; i++) {
 
-//         for (j = 0; j < word.length; j++) {
 
-//             if (str[i + j].toLowerCase() !== word[j]) { //11 + 0  == 0
+        
+        for (j = 0; j < word.length; j++) {
 
-//                 break;
-//             }
-//         }
-//         if (j == word.length) {
+            
+                if (str[i + j].toLowerCase() !== word[j] )  { //11 + 0  == 0
 
-//             count++
-//         }
-//     }
+                    break;
+                }
+        }
 
-//     return count;
-// }
-// console.log(findtheword("My name is Yaseen and Yaseen is good person, Yaseen is form AP", "yaseen"));
+        if (j == word.length) {
+
+            count++
+        }
+    }
+
+    return count;
+}
+console.log(findtheword("My name is Yaseen , Yaseen is a person from Ap.", "person"));
 
 
 // unique element

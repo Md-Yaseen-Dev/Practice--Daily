@@ -47,7 +47,7 @@
 
 // console.log(factorial(6));
 
-// ------------------------------------
+// ------------------------------------base---------------------------------
 // var base_convert = function (number, initial_base, change_base) {
 //     // if ((initial_base && change_base) < 2 || (initial_base && change_base) > 36)
 //     //     return 'Base between 2 and 36';
@@ -276,3 +276,11 @@ function lastelem(arr, last) {
 }
 
 console.log(lastelem([2, 3, 4, 1, 2], 3));
+
+
+// ----------------------------fabnocci---------------------
+
+function fabnocci(){
+
+    let fabnocciNum = []
+}
