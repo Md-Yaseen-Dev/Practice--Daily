@@ -111,3 +111,27 @@ function intersection(arr1, arr2) {
 }
 console.log(intersection([2, 3, 4, 9], [1, 4, 2, 3, 6]));
 
+
+// --------------------------------------------ordered matrix---------------------------------------------
+
+function orderedmatrix(a, b) {
+
+    let newarr = [];
+    let count = 1;
+    for (let i = 0; i < a; i++) {
+
+        let row = [];
+
+        for (let j = 1; j <= b; j++) {
+
+            row.push(count);
+
+            count++
+        }
+        newarr.push(row)
+    }
+
+    return newarr
+}
+console.log(orderedmatrix(3, 5)) //
+

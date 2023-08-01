@@ -10,22 +10,22 @@
 // // password
 
 
-// function password() {
+function password() {
 
-//     let str = "abcdefghijklmnopqrstuvwxyz1234567890"
+    let str = "abcdefghijklmnopqrstuvwxyz1234567890"
 
-//     let str1 = ""
+    let str1 = ""
 
 
-//     for (i = 0; i < 14; i++) {
+    for (i = 0; i < 6; i++) {
 
-//         let val = (Math.random() * 36).toFixed(0);
+        let val = (Math.random() * 36).toFixed(0);
 
-//         str1 += str.charAt(val)
-//     }
-//     return str1
-// }
-// console.log(password());
+        str1 += str.charAt(val)
+    }
+    return str1
+}
+console.log(password());
 
 // // return duplicate integer of an array
 
@@ -53,36 +53,36 @@ console.log(duplicateInt([81, 72, 43, 72, 81, 99, 99, 100, 12, 54]));
 
 // array missing
 
-// function missingNum(arr) {
+function missingNum(arr) {
 
-//     let min = Math.min(...arr);
-//     let max = Math.max(...arr);
-//     let newArr = [];
-//     // let flag = false;
-//     for (i = min; i <= max; i++) {
+    let min = Math.min(...arr);
+    let max = Math.max(...arr);
+    let newArr = [];
+    // let flag = false;
+    for (i = min; i <= max; i++) {
 
-//         // for (j = 0; j < arr.length; j++) {
+        // for (j = 0; j < arr.length; j++) {
 
-//         //     if (arr[j] === i) {
-//         //         flag = true;
-//         //         break;
-//         //     }
+            // if (arr[j] === i) {
+            //     flag = true;
+            //     break;
+            // }
 
-//         // }
+        // }
 
-//         // if (!flag) {
-//         //     newArr.push(i);
+        // if (!flag) {
+        //     newArr.push(i);
 
-//         // }
-//         // flag = false;
+        // }
+        // flag = false;
 
-//         if(!arr.includes(i)){
+        if(!arr.includes(i)){
 
-//             newArr.push(i)
-//         }
-//     }
-//     return newArr
+            newArr.push(i)
+        }
+    }
+    return newArr
 
-// }
+}
 
-// console.log(missingNum([3, 2, 4, 7, 9]));
+console.log(missingNum([3, 2, 4, 7, 9]))
