@@ -48,23 +48,23 @@
 // // ---------------------------repeated----------------------------------------
 
 
-// function repeated(arr) {
+function repeated(arr) {
 
-//     let newarr = [];
+    let newarr = [];
 
-//     for (let i = 1; i < arr.length; i++) {
+    for (let i = 1; i < arr.length; i++) {
 
-//         for (j = 0; j < i; j++) {
+        for (j = 0; j < i; j++) {
 
-//             if (arr[i] == arr[j] && !newarr.includes(arr[i])) {
+            if (arr[i] == arr[j] && !newarr.includes(arr[i])) {
 
-//                 newarr.push(arr[i])
-//             }
-//         }
-//     }
-//     return newarr
-// }
-// console.log(repeated([2, 3, 4, 1, 3, 2, 3, 4, 5]));
+                newarr.push(arr[i])
+            }
+        }
+    }
+    return newarr
+}
+console.log(repeated([2, 3, 4, 1, 3, 2, 3, 4, 5,9,9,9,9,9,11,11]));
 
 // ---------------------------union------------------------------------
 
