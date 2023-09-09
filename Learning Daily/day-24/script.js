@@ -31,9 +31,6 @@ console.log(falseval([NaN, 0, 15, false, -22, '', undefined, 47, null]));
 //    { author: 'Suzanne Collins', title: 'Mockingjay: The Final Book of The Hunger Games', libraryID: 3245}
 //    ];
 
-
-
-
 var library = [
     { author: 'Bill Gates', title: 'The Road Ahead', libraryID: 1254 },
     { author: 'Steve Jobs', title: 'Walter Isaacson', libraryID: 4264 },
