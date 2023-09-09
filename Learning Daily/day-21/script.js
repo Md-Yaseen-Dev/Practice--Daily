@@ -12,6 +12,7 @@ function primeFactor(num) {
             newArr.push(i);
             num = num / i;
             i--
+        
         }
 
 
@@ -19,7 +20,7 @@ function primeFactor(num) {
     return newArr
 }
 
-// console.log(primeFactor(30))
+console.log(primeFactor(30))
 
 
 // Write a JavaScript function to convert an amount into coins.
